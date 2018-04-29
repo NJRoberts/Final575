@@ -1,0 +1,76 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <!---leaflet CSS File below --->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+        integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin=""/>
+        <link rel="stylesheet" href="lib/leaflet.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here-->
+
+         <div id="mapid"></div>
+
+         <div id='title'>
+           <h3>Oakland Parking Meter Revenue Map</h3>
+         </div>
+
+         <div id='splash'>
+           <div id='close'><h6>close</h6></div>
+
+           <h2>Oakland Parking Meter Data</h2>
+           <p> This interactive map displays parking meter revenue summarized per quarter for 2016 - 2017. Use the slider to see how meter revenue fluctuates. </p>
+           <p> The Parking Occupancy layer is based on Peak Hour occupancy rates provided by the <a href='https://www.oaklandca.gov/services/dot/parking/downtown-oakland-parking-study' title="Downtown Oakland Parking Study" style='color:#FFF' target="_blank" aria-haspopup="true">Downtown Oakland Parking Study.</a></p>
+           <p> Occupancy rates are categorized by the following: <font color='#6cab45'>Green:</font> 0-65%, <font color='#face1d'>Yellow:</font> 66-85%, <font color='#e3282e'>Red:</font> 85%+, and Black: No Parking / Under Construction</p>
+         </div>
+
+         <div id='showSplash'>
+           <p><b>Map Info</b></p>
+         </div>
+
+
+
+<!-- Password access for website  *NOT SECURE from hacking test on Github
+
+            <SCRIPT language="JavaScript">
+            var password;
+            var pass1="meters";
+            password=prompt('Client Password',' ');
+            if (password==pass1)
+            alert('Password Accepted - Click OK to Enter.');
+            else { window.location="https://www.oaklandca.gov/";
+            }
+            </SCRIPT>
+
+ Password access for website  *NOT SECURE from hacking test on Github-->
+
+         <!-- Leaflet Javascript below...put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+        integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+        crossorigin=""></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.js"><\/script>')</script>
+         <script src="js/main.js"></script>
+        <script src="lib/leaflet.js"></script>
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
